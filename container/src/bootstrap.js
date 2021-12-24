@@ -1,3 +1,3 @@
-import "products/ProductsIndex";
+import "products/list";
 
 console.log("hey");
