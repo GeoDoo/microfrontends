@@ -2,6 +2,6 @@ import faker from "faker";
 
 const products = Array.from("howdy")
   .map(() => `<div>${faker.commerce.productName()}</div>`)
-  .toString();
+  .join("");
 
-console.log(products);
+document.getElementById("products").innerHTML = products;
