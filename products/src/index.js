@@ -4,4 +4,4 @@ const products = Array.from("howdy")
   .map(() => `<div>${faker.commerce.productName()}</div>`)
   .join("");
 
-document.getElementById("products").innerHTML = products;
+  document.querySelector('#my-products').innerHTML = products;
