@@ -8,10 +8,10 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "my-products",
+      name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./my-productsIndex": "./src/index",
+        "./ProductsIndex": "./src/index",
       },
     }),
     new HtmlWebpackPlugin({
