@@ -1,5 +1,7 @@
 import faker from "faker";
 
-const products = `<div>${faker.commerce.productName()}</div><div>${faker.commerce.productName()}</div><div>${faker.commerce.productName()}</div>`;
+const products = Array.from("howdy")
+  .map(() => `<div>${faker.commerce.productName()}</div>`)
+  .toString();
 
 console.log(products);
