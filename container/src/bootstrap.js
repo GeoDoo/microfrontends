@@ -1,3 +1,2 @@
 import "products/list";
-
-console.log("hey");
+import "cart/contents";
